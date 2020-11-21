@@ -9,7 +9,8 @@ function setup() {
   engine = Engine.create();
   world = engine.world;
 
-
+  slingshot = new SlingShot(polygon.body,{x:.200,y:50})
+  Polygon = new polygon(50,50,20,20)
   block8 = new Base(330,235,30,40)
   block9 = new Base(360,235,30,40)
   block10 = new Base(390,235,30,40)
@@ -32,6 +33,8 @@ function draw() {
   block14.display();
   block15.display();
   block16.display();
+  slingshot.display();
+  Polygon.display();
   drawSprites();
 }
 
