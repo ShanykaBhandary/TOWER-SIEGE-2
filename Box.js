@@ -8,7 +8,7 @@ class Box extends Base{
          
       
       display(){
-      if(this.body.speed < 3){
+      if(this.body.speed < 2){
           super.display();
       }
         else{
@@ -21,4 +21,10 @@ class Box extends Base{
       }
       
  }
+ score(){
+  if(this.Visibility<0 && this.Visibility >- 1005){
+
+    score++
+  }
+}
 }
